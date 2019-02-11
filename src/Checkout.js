@@ -13,6 +13,8 @@ import Typography from '@material-ui/core/Typography';
 import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import Review from './Review';
+import Id from './Id';
+import Access from './Access';
 
 const styles = theme => ({
   appBar: {
@@ -51,7 +53,7 @@ const styles = theme => ({
   },
 });
 
-const steps = ['Shipping address', 'Payment details', 'Review your order'];
+const steps = ['Start', 'Company', 'Data', 'ID', 'Access'];
 
 function getStepContent(step) {
   switch (step) {
@@ -61,6 +63,10 @@ function getStepContent(step) {
       return <PaymentForm />;
     case 2:
       return <Review />;
+    case 3:
+      return <Id />;
+    case 4:
+      return <Access />;
     default:
       throw new Error('Unknown step');
   }
@@ -99,14 +105,14 @@ class Checkout extends React.Component {
         <AppBar position="absolute" color="default" className={classes.appBar}>
           <Toolbar>
             <Typography variant="h6" color="inherit" noWrap>
-              Company name
+              Access My Info
             </Typography>
           </Toolbar>
         </AppBar>
         <main className={classes.layout}>
           <Paper className={classes.paper}>
             <Typography component="h1" variant="h4" align="center">
-              Checkout
+              Welcome!
             </Typography>
             <Stepper activeStep={activeStep} className={classes.stepper}>
               {steps.map(label => (
