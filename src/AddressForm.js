@@ -13,10 +13,10 @@ import CardContent from '@material-ui/core/CardContent';
 
 const styles = {
   card: {
-    maxWidth: 345,
+    maxWidth: 1000,
   },
   media: {
-    height: 140,
+    height: 200,
   },
 };
 
@@ -33,15 +33,15 @@ function AddressForm(props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="heart.png"
-          title="Heart"
+          image="satellite-dish-solid.svg.png"
+          title="Satellite"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Dating Applications
+            Telecommunications
           </Typography>
           <Typography component="p">
-            Your personality traits, sexual preferences, dating history, and other lifestyle information.
+            Your phone call records, web browsing history, geolocation, and device identifiers.
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -67,15 +67,15 @@ function AddressForm(props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="satellite-dish-solid.svg.png"
-          title="Satellite"
+          image="heart.png"
+          title="Heart"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Telecommunications
+            Dating Applications
           </Typography>
           <Typography component="p">
-            Your phone call records, web browsing history, geolocation, and device identifiers.
+            Your personality traits, sexual preferences, dating history, and other lifestyle information.
           </Typography>
         </CardContent>
       </CardActionArea>

@@ -13,10 +13,10 @@ import CardContent from '@material-ui/core/CardContent';
 
 const styles = {
   card: {
-    maxWidth: 345,
+    maxWidth: 1000,
   },
   media: {
-    height: 140,
+    height: 200,
   },
 };
 
