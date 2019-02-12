@@ -47,12 +47,12 @@ function PaymentForm(props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="swimmer-solid.svg.png"
-          title="Swimmer"
+          image="android-brands.svg.png"
+          title="Android"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Fitness Trackers
+            Android
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -61,12 +61,110 @@ function PaymentForm(props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="satellite-dish-solid.svg.png"
-          title="Satellite"
+          image="apple-brands.svg.png"
+          title="Apple"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Telecommunications
+            Apple
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+    <Card className={classes.card}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image="bluetooth-brands.svg.png"
+          title="Bluetooth"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Bluetooth
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+    <Card className={classes.card}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image="chrome-brands.svg.png"
+          title="Chrome"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Chrome
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+    <Card className={classes.card}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image="ebay-brands.svg.png"
+          title="Ebay"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Ebay
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+    <Card className={classes.card}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image="firefox-brands.svg.png"
+          title="FireFox"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Firefox
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+    <Card className={classes.card}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image="github-brands.svg.png"
+          title="Github"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Github
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+    <Card className={classes.card}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image="google-drive-brands.svg.png"
+          title="Google Drive"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Google Drive
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+    <Card className={classes.card}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image="gulp-brands.svg.png"
+          title="Gulp"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Gulp
           </Typography>
         </CardContent>
       </CardActionArea>
