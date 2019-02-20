@@ -38,7 +38,7 @@ function AddressForm(props) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            ARCO 1
+            ARCO - Acceso
           </Typography>
           <Typography component="p">
             Acceso, Rectificación, Cancelación, Oposición
@@ -55,7 +55,7 @@ function AddressForm(props) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            ARCO 2
+            ARCO - Rectificación
           </Typography>
           <Typography component="p">
             Acceso, Rectificación, Cancelación, Oposición
@@ -72,7 +72,7 @@ function AddressForm(props) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Seguridad
+            ARCO - Cancelación
           </Typography>
           <Typography component="p">
             Your personality traits, sexual preferences, dating history, and other lifestyle information.
