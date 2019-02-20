@@ -75,7 +75,24 @@ function AddressForm(props) {
             ARCO - Cancelación
           </Typography>
           <Typography component="p">
-            Your personality traits, sexual preferences, dating history, and other lifestyle information.
+            Acceso, Rectificación, Cancelación, Oposición
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+    <Card className={classes.card}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image="satellite-dish-solid.svg.png"
+          title="Satellite"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            ARCO - Oposición
+          </Typography>
+          <Typography component="p">
+            Acceso, Rectificación, Cancelación, Oposición
           </Typography>
         </CardContent>
       </CardActionArea>
