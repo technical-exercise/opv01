@@ -15,6 +15,8 @@ import PaymentForm from './PaymentForm';
 import Review from './Review';
 import Id from './Id';
 import Access from './Access';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
 
 const styles = theme => ({
   appBar: {
@@ -102,13 +104,16 @@ class Checkout extends React.Component {
     return (
       <React.Fragment>
         <CssBaseline />
-        <AppBar position="absolute" color="default" className={classes.appBar}>
-          <Toolbar>
-            <Typography variant="h6" color="inherit" noWrap>
-              Access My Info
-            </Typography>
-          </Toolbar>
-        </AppBar>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" color="inherit" className={classes.grow}>
+            Access My Info
+          </Typography>
+        </Toolbar>
+      </AppBar>
         <main className={classes.layout}>
           <Paper className={classes.paper}>
             <Typography component="h1" variant="h4" align="center">
