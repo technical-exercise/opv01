@@ -38,10 +38,10 @@ function AddressForm(props) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Telecommunications
+            ARCO 1
           </Typography>
           <Typography component="p">
-            Your phone call records, web browsing history, geolocation, and device identifiers.
+            Acceso, Rectificación, Cancelación, Oposición
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -55,10 +55,10 @@ function AddressForm(props) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Fitness Trackers
+            ARCO 2
           </Typography>
           <Typography component="p">
-            Your heartbeat, sleeping patterns, diet, weight, walking habits, and general health.
+            Acceso, Rectificación, Cancelación, Oposición
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -72,7 +72,7 @@ function AddressForm(props) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Dating Applications
+            Seguridad
           </Typography>
           <Typography component="p">
             Your personality traits, sexual preferences, dating history, and other lifestyle information.
