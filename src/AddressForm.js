@@ -25,7 +25,7 @@ function AddressForm(props) {
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Request information from
+        Selecciona el servicio
       </Typography>
       <Grid container spacing={24}>
         <Grid item xs={12} sm={24}>
@@ -33,15 +33,12 @@ function AddressForm(props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="satellite-dish-solid.svg.png"
-          title="Satellite"
+          image="telcel.png"
+          title="Telcel"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            ARCO - Acceso
-          </Typography>
-          <Typography component="p">
-            Acceso, Rectificación, Cancelación, Oposición
+            Telefonía fija
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -50,15 +47,12 @@ function AddressForm(props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="swimmer-solid.svg.png"
-          title="Swimmer"
+          image="movistar.png"
+          title="Movistar"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            ARCO - Rectificación
-          </Typography>
-          <Typography component="p">
-            Acceso, Rectificación, Cancelación, Oposición
+            Banda Ancha Fija
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -72,10 +66,7 @@ function AddressForm(props) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            ARCO - Cancelación
-          </Typography>
-          <Typography component="p">
-            Acceso, Rectificación, Cancelación, Oposición
+            Televisión Restringida
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -89,10 +80,21 @@ function AddressForm(props) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            ARCO - Oposición
+            Telefonía movil
           </Typography>
-          <Typography component="p">
-            Acceso, Rectificación, Cancelación, Oposición
+        </CardContent>
+      </CardActionArea>
+    </Card>
+    <Card className={classes.card}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image="satellite-dish-solid.svg.png"
+          title="Satellite"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Banda Ancha Móvil
           </Typography>
         </CardContent>
       </CardActionArea>

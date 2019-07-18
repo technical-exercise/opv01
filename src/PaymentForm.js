@@ -33,7 +33,7 @@ function PaymentForm(props) {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="amazon-brands.svg.png"
+          image="telcel.png"
           title="Amazon"
         />
         <CardContent>
