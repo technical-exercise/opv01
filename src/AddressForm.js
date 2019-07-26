@@ -20,8 +20,13 @@ const styles = {
   },
 };
 
-function AddressForm(props) {
-  const { classes } = props;
+class AddressForm extends React.Component {
+
+  constructor(props) {
+  super(props);
+  }
+  render() {
+    const { classes } = this.props;
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
@@ -103,6 +108,7 @@ function AddressForm(props) {
       </Grid>
     </React.Fragment>
   );
+  }
 }
 
 AddressForm.propTypes = {
