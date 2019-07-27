@@ -24,7 +24,14 @@ class AddressForm extends React.Component {
 
   constructor(props) {
   super(props);
+  this.state = { 'haha': 'hehehe' };
   }
+
+telefoniaFija() {
+    this.setState();
+  console.log('hey!');
+  console.log(this.state);
+}
   render() {
     const { classes } = this.props;
   return (
@@ -35,7 +42,7 @@ class AddressForm extends React.Component {
       <Grid container spacing={24}>
         <Grid item xs={12} sm={24}>
     <Card className={classes.card}
-          onClick={telefoniaFija}
+          onClick={() => this.telefoniaFija()}
     >
       <CardActionArea>
         <CardMedia
@@ -111,10 +118,6 @@ class AddressForm extends React.Component {
     </React.Fragment>
   );
   }
-}
-
-function telefoniaFija() {
-  console.log('hey!');
 }
 
 AddressForm.propTypes = {

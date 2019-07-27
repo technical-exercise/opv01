@@ -56,21 +56,17 @@ const styles = theme => ({
   },
 });
 
-const steps = ['Start', 'Requisitos', 'Company', 'Data', 'ID', 'Access'];
+const steps = ['Tipo de Servicio', 'Proveedor', 'Formulario', 'Acceso'];
 
 function getStepContent(step) {
   switch (step) {
     case 0:
       return <AddressForm />;
     case 1:
-      return <Requisitos />;
-    case 2:
       return <PaymentForm />;
-    case 3:
-      return <Review />;
-    case 4:
+    case 2:
       return <Id />;
-    case 5:
+    case 3:
       return <Access />;
     default:
       throw new Error('Unknown step');
