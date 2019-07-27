@@ -109,15 +109,12 @@ class Checkout extends React.Component {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" color="inherit" className={classes.grow}>
-            Access My Info
+            Mis Datos
           </Typography>
         </Toolbar>
       </AppBar>
         <main className={classes.layout}>
           <Paper className={classes.paper}>
-            <Typography component="h1" variant="h4" align="center">
-              Welcomeee!
-            </Typography>
             <Stepper activeStep={activeStep} className={classes.stepper}>
               {steps.map(label => (
                 <Step key={label}>
