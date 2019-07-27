@@ -34,7 +34,9 @@ class AddressForm extends React.Component {
       </Typography>
       <Grid container spacing={24}>
         <Grid item xs={12} sm={24}>
-    <Card className={classes.card}>
+    <Card className={classes.card}
+          onClick={telefoniaFija}
+    >
       <CardActionArea>
         <CardMedia
           className={classes.media}
@@ -109,6 +111,10 @@ class AddressForm extends React.Component {
     </React.Fragment>
   );
   }
+}
+
+function telefoniaFija() {
+  console.log('hey!');
 }
 
 AddressForm.propTypes = {
