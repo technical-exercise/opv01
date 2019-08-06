@@ -73,7 +73,7 @@ function getStepContent(step) {
   }
 }
 
-class Checkout extends React.Component {
+class Opv extends React.Component {
   state = {
     activeStep: 0,
   };
@@ -157,8 +157,8 @@ class Checkout extends React.Component {
   }
 }
 
-Checkout.propTypes = {
+Opv.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(Checkout);
+export default withStyles(styles)(Opv);
