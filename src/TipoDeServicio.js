@@ -34,89 +34,89 @@ telefoniaFija() {
 }
   render() {
     const { classes } = this.props;
-  return (
-    <React.Fragment>
-      <Typography variant="h6" gutterBottom>
-        Selecciona el tipo de servicio
-      </Typography>
-      <Grid container spacing={24}>
-        <Grid item xs={12} sm={24}>
-    <Card className={classes.card}
-          onClick={() => this.telefoniaFija()}
-    >
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="telefonia-fija.png"
-          title="Telefonía fija"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Telefonía fija
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    <Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="broadband.png"
-          title="Broadband"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Banda Ancha Fija
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    <Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="tv.png"
-          title="TV"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Televisión Restringida
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    <Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="mobile.png"
-          title="Mobile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Telefonía movil
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
-    <Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="satellite-dish.png"
-          title="Banda Ancha Móvil"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Banda Ancha Móvil
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
+    return (
+      <React.Fragment>
+        <Typography variant="h6" gutterBottom>
+          Selecciona el tipo de servicio
+        </Typography>
+        <Grid container spacing={24}>
+          <Grid item xs={12} sm={24}>
+            <Card className={classes.card}
+              onClick={() => this.telefoniaFija()}
+            >
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image="telefonia-fija.png"
+                  title="Telefonía fija"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Telefonía fija
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+            <Card className={classes.card}>
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image="broadband.png"
+                  title="Broadband"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Banda Ancha Fija
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+            <Card className={classes.card}>
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image="tv.png"
+                  title="TV"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Televisión Restringida
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+            <Card className={classes.card}>
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image="mobile.png"
+                  title="Mobile"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Telefonía movil
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+            <Card className={classes.card}>
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image="satellite-dish.png"
+                  title="Banda Ancha Móvil"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Banda Ancha Móvil
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
         </Grid>
-      </Grid>
-    </React.Fragment>
-  );
+      </React.Fragment>
+    );
   }
 }
 
