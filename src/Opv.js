@@ -10,7 +10,7 @@ import Step from '@material-ui/core/Step';
 import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import AddressForm from './AddressForm';
+import TipoDeServicio from './TipoDeServicio';
 import Requisitos from './Requisitos';
 import PaymentForm from './PaymentForm';
 import Review from './Review';
@@ -61,7 +61,7 @@ const steps = ['Tipo de Servicio', 'Proveedor', 'Formulario', 'Acceso'];
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return <AddressForm />;
+      return <TipoDeServicio />;
     case 1:
       return <PaymentForm />;
     case 2:

@@ -20,7 +20,7 @@ const styles = {
   },
 };
 
-class AddressForm extends React.Component {
+class TipoDeServicio extends React.Component {
 
   constructor(props) {
   super(props);
@@ -120,8 +120,8 @@ telefoniaFija() {
   }
 }
 
-AddressForm.propTypes = {
+TipoDeServicio.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(AddressForm);
+export default withStyles(styles)(TipoDeServicio);
