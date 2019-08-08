@@ -25,7 +25,6 @@ class TipoDeServicio extends React.Component {
   constructor(props) {
     super(props);
     this.telefoniaFija = this.telefoniaFija.bind(this);
-    this.state = {step: 0}
   }
 
   telefoniaFija() {

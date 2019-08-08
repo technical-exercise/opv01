@@ -58,29 +58,30 @@ const styles = theme => ({
 
 const steps = ['Tipo de Servicio', 'Proveedor', 'Formulario', 'Acceso'];
 
-function telefoniaFija() {
-  console.log('hey!');
-}
-
-function getStepContent(step) {
-  switch (step) {
-    case 0:
-      return <TipoDeServicio telefoniaFija={telefoniaFija} />;
-    case 1:
-      return <PaymentForm />;
-    case 2:
-      return <Id />;
-    case 3:
-      return <Access />;
-    default:
-      throw new Error('Unknown step');
-  }
-}
-
 class Opv extends React.Component {
   state = {
     activeStep: 0,
   };
+
+  getStepContent = (step) => {
+    switch (step) {
+      case 0:
+        return <TipoDeServicio telefoniaFija={this.telefoniaFija} />;
+      case 1:
+        return <PaymentForm />;
+      case 2:
+        return <Id />;
+      case 3:
+        return <Access />;
+      default:
+        throw new Error('Unknown step');
+    }
+  };
+
+  telefoniaFija = () => {
+    this.setState({activeStep: 1});
+    console.log('hey!');
+  }
 
   handleNext = () => {
     this.setState(state => ({
@@ -135,7 +136,7 @@ class Opv extends React.Component {
                 </React.Fragment>
               ) : (
                 <React.Fragment>
-                  {getStepContent(activeStep)}
+                  {this.getStepContent(activeStep)}
                   <div className={classes.buttons}>
                     {activeStep !== 0 && (
                       <Button onClick={this.handleBack} className={classes.button}>
