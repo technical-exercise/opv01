@@ -20,15 +20,29 @@ const styles = {
   },
 };
 
-function ProveedoresTelefoniaFija(props) {
+function ProveedoresBandaAnchaFija(props) {
   const { classes } = props;
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Seleccione su proveedor de <u>Telefonía fija</u>
+        Seleccione su proveedor de <u>Banda ancha fija</u>
       </Typography>
       <Grid container spacing={24}>
         <Grid item xs={12} sm={24}>
+          <Card className={classes.card}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image="axtel.png"
+                title="axtel"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  axtel
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
           <Card className={classes.card}>
             <CardActionArea>
               <CardMedia
@@ -105,4 +119,4 @@ function ProveedoresTelefoniaFija(props) {
   );
 }
 
-export default withStyles(styles)(ProveedoresTelefoniaFija);
+export default withStyles(styles)(ProveedoresBandaAnchaFija);

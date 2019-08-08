@@ -38,7 +38,7 @@ class TipoDeServicio extends React.Component {
     return (
       <React.Fragment>
         <Typography variant="h6" gutterBottom>
-          Selecciona el tipo de servicio
+          Seleccione el tipo de servicio
         </Typography>
         <Grid container spacing={24}>
           <Grid item xs={12} sm={24}>
@@ -70,7 +70,7 @@ class TipoDeServicio extends React.Component {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    Banda Ancha Fija
+                    Banda ancha fija
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -84,7 +84,7 @@ class TipoDeServicio extends React.Component {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    Televisión Restringida
+                    Televisión restringida
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -112,7 +112,7 @@ class TipoDeServicio extends React.Component {
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="h2">
-                    Banda Ancha Móvil
+                    Banda ancha móvil
                   </Typography>
                 </CardContent>
               </CardActionArea>

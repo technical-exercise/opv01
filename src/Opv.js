@@ -12,7 +12,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import TipoDeServicio from './TipoDeServicio';
 import ProveedoresTelefoniaFija from './ProveedoresTelefoniaFija';
-import Id from './Id';
+import ProveedoresBandaAnchaFija from './ProveedoresBandaAnchaFija';
 import Access from './Access';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -71,7 +71,7 @@ class Opv extends React.Component {
       case 1:
         return <ProveedoresTelefoniaFija />;
       case 2:
-        return <Id />;
+        return <ProveedoresBandaAnchaFija />;
       case 3:
         return <Access />;
       default:
