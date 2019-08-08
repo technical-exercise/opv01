@@ -58,10 +58,14 @@ const styles = theme => ({
 
 const steps = ['Tipo de Servicio', 'Proveedor', 'Formulario', 'Acceso'];
 
+function telefoniaFija() {
+  console.log('hey!');
+}
+
 function getStepContent(step) {
   switch (step) {
     case 0:
-      return <TipoDeServicio />;
+      return <TipoDeServicio telefoniaFija={telefoniaFija} />;
     case 1:
       return <PaymentForm />;
     case 2:

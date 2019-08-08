@@ -23,15 +23,15 @@ const styles = {
 class TipoDeServicio extends React.Component {
 
   constructor(props) {
-  super(props);
-  this.state = { 'haha': 'hehehe' };
+    super(props);
+    this.telefoniaFija = this.telefoniaFija.bind(this);
+    this.state = {step: 0}
   }
 
-telefoniaFija() {
-    this.setState();
-  console.log('hey!');
-  console.log(this.state);
-}
+  telefoniaFija() {
+    this.props.telefoniaFija();
+  }
+
   render() {
     const { classes } = this.props;
     return (
@@ -42,7 +42,7 @@ telefoniaFija() {
         <Grid container spacing={24}>
           <Grid item xs={12} sm={24}>
             <Card className={classes.card}
-              onClick={() => this.telefoniaFija()}
+              onClick={this.telefoniaFija}
             >
               <CardActionArea>
                 <CardMedia
