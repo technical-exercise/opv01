@@ -25,6 +25,11 @@ class TipoDeServicio extends React.Component {
   constructor(props) {
     super(props);
     this.telefoniaFija = this.telefoniaFija.bind(this);
+    this.bandaAnchaFija = this.bandaAnchaFija.bind(this);
+  }
+
+  bandaAnchaFija() {
+    this.props.bandaAnchaFija();
   }
 
   telefoniaFija() {
@@ -56,7 +61,10 @@ class TipoDeServicio extends React.Component {
                 </CardContent>
               </CardActionArea>
             </Card>
-            <Card className={classes.card}>
+            <Card
+              className={classes.card}
+              onClick={this.bandaAnchaFija}
+            >
               <CardActionArea>
                 <CardMedia
                   className={classes.media}

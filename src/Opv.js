@@ -12,7 +12,7 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import TipoDeServicio from './TipoDeServicio';
 import Requisitos from './Requisitos';
-import PaymentForm from './PaymentForm';
+import ProveedoresTelefoniaFija from './ProveedoresTelefoniaFija';
 import Review from './Review';
 import Id from './Id';
 import Access from './Access';
@@ -66,9 +66,12 @@ class Opv extends React.Component {
   getStepContent = (step) => {
     switch (step) {
       case 0:
-        return <TipoDeServicio telefoniaFija={this.telefoniaFija} />;
+        return <TipoDeServicio
+                 telefoniaFija={this.telefoniaFija}
+                 bandaAnchaFija={this.bandaAnchaFija}
+               />;
       case 1:
-        return <PaymentForm />;
+        return <ProveedoresTelefoniaFija />;
       case 2:
         return <Id />;
       case 3:
@@ -80,7 +83,10 @@ class Opv extends React.Component {
 
   telefoniaFija = () => {
     this.setState({activeStep: 1});
-    console.log('hey!');
+  }
+
+  bandaAnchaFija = () => {
+    this.setState({activeStep: 2});
   }
 
   handleNext = () => {

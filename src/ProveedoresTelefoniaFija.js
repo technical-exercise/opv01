@@ -20,7 +20,7 @@ const styles = {
   },
 };
 
-function PaymentForm(props) {
+function ProveedoresTelefoniaFija(props) {
   const { classes } = props;
   return (
     <React.Fragment>
@@ -175,4 +175,4 @@ function PaymentForm(props) {
   );
 }
 
-export default withStyles(styles)(PaymentForm);
+export default withStyles(styles)(ProveedoresTelefoniaFija);
