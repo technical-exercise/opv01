@@ -33,7 +33,7 @@ function ProveedoresTelefoniaMovil(props) {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="maxcom.png"
+                image="mobile.png"
                 title="Maxcom"
               />
               <CardContent>

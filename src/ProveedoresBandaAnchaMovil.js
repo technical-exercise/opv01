@@ -61,7 +61,7 @@ function ProveedoresBandaAnchaMovil(props) {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="maxcom.png"
+                image="satellite-dish.png"
                 title="Maxcom"
               />
               <CardContent>

@@ -61,7 +61,7 @@ function ProveedoresTv(props) {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="maxcom.png"
+                image="tv.png"
                 title="Maxcom"
               />
               <CardContent>
@@ -75,7 +75,7 @@ function ProveedoresTv(props) {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="Megacable.png"
+                image="tv.png"
                 title="Megacable"
               />
               <CardContent>
@@ -89,7 +89,7 @@ function ProveedoresTv(props) {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="mvs.png"
+                image="tv.png"
                 title="MVS"
               />
               <CardContent>
@@ -103,7 +103,7 @@ function ProveedoresTv(props) {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="bluetelecomm.png"
+                image="tv.png"
                 title="Bluetelecomm"
               />
               <CardContent>
@@ -117,7 +117,7 @@ function ProveedoresTv(props) {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="tvrey.png"
+                image="tv.png"
                 title="TV Rey"
               />
               <CardContent>

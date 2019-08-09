@@ -47,7 +47,7 @@ function ProveedoresTelefoniaFija(props) {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="maxcom.png"
+                image="telefonia-fija.png"
                 title="Maxcom"
               />
               <CardContent>
@@ -61,7 +61,7 @@ function ProveedoresTelefoniaFija(props) {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="Megacable.png"
+                image="telefonia-fija.png"
                 title="Megacable"
               />
               <CardContent>

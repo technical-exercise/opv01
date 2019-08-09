@@ -61,7 +61,7 @@ function ProveedoresBandaAnchaFija(props) {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="maxcom.png"
+                image="broadband.png"
                 title="Maxcom"
               />
               <CardContent>
@@ -75,7 +75,7 @@ function ProveedoresBandaAnchaFija(props) {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="Megacable.png"
+                image="broadband.png"
                 title="Megacable"
               />
               <CardContent>
