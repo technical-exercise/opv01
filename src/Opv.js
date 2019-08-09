@@ -14,6 +14,7 @@ import TipoDeServicio from './TipoDeServicio';
 import Providers from './Providers';
 import ProveedoresBandaAnchaFija from './ProveedoresBandaAnchaFija';
 import Access from './Access';
+import Form from './Form';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
@@ -75,7 +76,7 @@ class Opv extends React.Component {
       case 1:
         return <Providers typeOfService={this.state.typeOfService} />;
       case 2:
-        return <ProveedoresBandaAnchaFija />;
+        return <Form />;
       case 3:
         return <Access />;
       default:
