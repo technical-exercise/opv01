@@ -20,29 +20,15 @@ const styles = {
   },
 };
 
-function ProveedoresTelefoniaMovil(props) {
+function ProveedoresBandaAnchaMovil(props) {
   const { classes } = props;
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Seleccione su proveedor de <u>Telefonía móvil</u>
+        Seleccione su proveedor de <u>Banda ancha móvil</u>
       </Typography>
       <Grid container spacing={24}>
         <Grid item xs={12} sm={24}>
-          <Card className={classes.card}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image="maxcom.png"
-                title="Maxcom"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  Maxcom
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
           <Card className={classes.card}>
             <CardActionArea>
               <CardMedia
@@ -61,12 +47,12 @@ function ProveedoresTelefoniaMovil(props) {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="weex.png"
-                title="Weex"
+                image="unefon.png"
+                title="Unefon"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  Weex
+                  Unefon
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -75,26 +61,12 @@ function ProveedoresTelefoniaMovil(props) {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
-                image="mobile.png"
-                title="QBOcel"
+                image="maxcom.png"
+                title="Maxcom"
               />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="h2">
-                  QBOcel
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-          <Card className={classes.card}>
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image="telcel.png"
-                title="TelCel"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  TelCel
+                  Maxcom
                 </Typography>
               </CardContent>
             </CardActionArea>
@@ -117,6 +89,20 @@ function ProveedoresTelefoniaMovil(props) {
             <CardActionArea>
               <CardMedia
                 className={classes.media}
+                image="telcel.png"
+                title="TelCel"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  TelCel
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
+          <Card className={classes.card}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
                 image="virgin.png"
                 title="Virgin Mobile"
               />
@@ -127,10 +113,24 @@ function ProveedoresTelefoniaMovil(props) {
               </CardContent>
             </CardActionArea>
           </Card>
+          <Card className={classes.card}>
+            <CardActionArea>
+              <CardMedia
+                className={classes.media}
+                image="weex.png"
+                title="Weex"
+              />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="h2">
+                  Weex
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+          </Card>
         </Grid>
       </Grid>
     </React.Fragment>
   );
 }
 
-export default withStyles(styles)(ProveedoresTelefoniaMovil);
+export default withStyles(styles)(ProveedoresBandaAnchaMovil);

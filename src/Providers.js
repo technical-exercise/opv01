@@ -14,6 +14,7 @@ import ProveedoresTelefoniaFija from './ProveedoresTelefoniaFija';
 import ProveedoresBandaAnchaFija from './ProveedoresBandaAnchaFija';
 import ProveedoresTv from './ProveedoresTv';
 import ProveedoresTelefoniaMovil from './ProveedoresTelefoniaMovil';
+import ProveedoresBandaAnchaMovil from './ProveedoresBandaAnchaMovil';
 
 const styles = {
   card: {
@@ -40,6 +41,8 @@ class Providers extends React.Component {
       providers_component = <ProveedoresTv />;
     } else if (typeOfService === 'telefonia_movil') {
       providers_component = <ProveedoresTelefoniaMovil />;
+    } else if (typeOfService === 'banda_ancha_movil') {
+      providers_component = <ProveedoresBandaAnchaMovil />;
     }
     return (
       <div>
