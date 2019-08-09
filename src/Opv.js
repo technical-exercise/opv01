@@ -11,7 +11,7 @@ import StepLabel from '@material-ui/core/StepLabel';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import TipoDeServicio from './TipoDeServicio';
-import ProveedoresTelefoniaFija from './ProveedoresTelefoniaFija';
+import Providers from './Providers';
 import ProveedoresBandaAnchaFija from './ProveedoresBandaAnchaFija';
 import Access from './Access';
 import IconButton from '@material-ui/core/IconButton';
@@ -59,6 +59,7 @@ const steps = ['Tipo de Servicio', 'Proveedor', 'Formulario', 'Acceso'];
 class Opv extends React.Component {
   state = {
     activeStep: 0,
+    provider: '',
   };
 
   getStepContent = (step) => {
@@ -67,9 +68,10 @@ class Opv extends React.Component {
         return <TipoDeServicio
                  telefoniaFija={this.telefoniaFija}
                  bandaAnchaFija={this.bandaAnchaFija}
+                 tv={this.tv}
                />;
       case 1:
-        return <ProveedoresTelefoniaFija />;
+        return <Providers typeOfService={this.state.typeOfService} />;
       case 2:
         return <ProveedoresBandaAnchaFija />;
       case 3:
@@ -80,11 +82,15 @@ class Opv extends React.Component {
   };
 
   telefoniaFija = () => {
-    this.setState({activeStep: 1});
+    this.setState({activeStep: 1, typeOfService: 'telefonia_fija'});
   }
 
   bandaAnchaFija = () => {
-    this.setState({activeStep: 2});
+    this.setState({activeStep: 1, typeOfService: 'banda_ancha_fija'});
+  }
+
+  tv = () => {
+    this.setState({activeStep: 1, typeOfService: 'tv'});
   }
 
   handleNext = () => {
