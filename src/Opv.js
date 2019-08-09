@@ -69,6 +69,7 @@ class Opv extends React.Component {
                  telefoniaFija={this.telefoniaFija}
                  bandaAnchaFija={this.bandaAnchaFija}
                  tv={this.tv}
+                 telefoniaMovil={this.telefoniaMovil}
                />;
       case 1:
         return <Providers typeOfService={this.state.typeOfService} />;
@@ -91,6 +92,10 @@ class Opv extends React.Component {
 
   tv = () => {
     this.setState({activeStep: 1, typeOfService: 'tv'});
+  }
+
+  telefoniaMovil = () => {
+    this.setState({activeStep: 1, typeOfService: 'telefonia_movil'});
   }
 
   handleNext = () => {
