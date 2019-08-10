@@ -14,15 +14,15 @@ function Form() {
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
-        Enter your information so Bell can identify you in their records.
+        Información del titular
       </Typography>
       <Grid container spacing={3}>
         <Grid item xs={12} sm={6}>
           <TextField
             required
-            id="firstName"
-            name="firstName"
-            label="First name"
+            id="apellidoPaterno"
+            name="apellidoPaterno"
+            label="Apellido paterno"
             fullWidth
             autoComplete="fname"
           />
@@ -30,9 +30,9 @@ function Form() {
         <Grid item xs={12} sm={6}>
           <TextField
             required
-            id="lastName"
-            name="lastName"
-            label="Last name"
+            id="apellidoMaterno"
+            name="apellidoMaterno"
+            label="Apellido materno"
             fullWidth
             autoComplete="lname"
           />
@@ -40,56 +40,104 @@ function Form() {
         <Grid item xs={12}>
           <TextField
             required
-            id="address1"
-            name="address1"
-            label="Address line 1"
+            id="nombre"
+            name="nombre"
+            label="Nombre(s)"
             fullWidth
-            autoComplete="billing address-line1"
+            autoComplete="nombre"
           />
         </Grid>
+      </Grid>
+      <br />
+      <Typography variant="h6" gutterBottom>
+        Domicilio
+      </Typography>
+      <Grid container spacing={3}>
         <Grid item xs={12}>
           <TextField
-            id="address2"
-            name="address2"
-            label="Address line 2"
+            required
+            id="calle"
+            name="calle"
+            label="Calle"
             fullWidth
-            autoComplete="billing address-line2"
+            autoComplete="calle"
           />
         </Grid>
         <Grid item xs={12} sm={6}>
           <TextField
             required
-            id="city"
-            name="city"
-            label="City"
+            id="numeroExterior"
+            name="numeroExterior"
+            label="Número exterior"
             fullWidth
-            autoComplete="billing address-level2"
+            autoComplete="numero_exterior"
           />
         </Grid>
         <Grid item xs={12} sm={6}>
-          <TextField id="state" name="state" label="State/Province/Region" fullWidth />
+          <TextField
+            required
+            id="numeroInterior"
+            name="numeroInterior"
+            label="Número interior"
+            fullWidth
+            autoComplete="numero_interior"
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <TextField
+            required
+            id="delegacionMunicipio"
+            name="delegacionMunicipio"
+            label="Delegación o municipio"
+            fullWidth
+            autoComplete="delegacionMunicipio"
+          />
         </Grid>
         <Grid item xs={12} sm={6}>
           <TextField
             required
             id="zip"
             name="zip"
-            label="Zip / Postal code"
+            label="Código postal"
             fullWidth
-            autoComplete="billing postal-code"
+            autoComplete="zip"
           />
         </Grid>
         <Grid item xs={12} sm={6}>
           <TextField
             required
-            id="country"
-            name="country"
-            label="Country"
+            id="entidadFederativa"
+            name="entidadFederativa"
+            label="Entidad federativa"
             fullWidth
-            autoComplete="billing country"
+            autoComplete="entidadFederativa"
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <TextField
+            required
+            id="mobile"
+            name="mobile"
+            label="Número de Celular (10 dígitos)"
+            fullWidth
+            autoComplete="mobile"
+          />
+        </Grid>
+        <Grid item xs={12}>
+          <TextField
+            required
+            id="phone"
+            name="phone"
+            label="Teléfono de casa"
+            fullWidth
+            autoComplete="phone"
           />
         </Grid>
       </Grid>
+      <br />
+      <Typography variant="h6" gutterBottom>
+        Solicitud
+      </Typography>
     </React.Fragment>
   );
 }
