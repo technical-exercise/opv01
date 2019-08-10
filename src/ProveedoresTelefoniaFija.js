@@ -30,97 +30,97 @@ class ProveedoresTelefoniaFija extends React.Component {
   }
   render() {
     const classes = this.props.classes;
-  return (
-    <React.Fragment>
-      <Typography variant="h6" gutterBottom>
-        Seleccione su proveedor de <u>Telefonía fija</u>
-      </Typography>
-      <Grid container spacing={24}>
-        <Grid item xs={12} sm={24}>
-          <Card className={classes.card}
-            onClick={this.goToForm}
-          >
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image="izzi.png"
-                title="izzi"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  izzi
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-          <Card className={classes.card}
-            onClick={this.goToForm}
-          >
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image="telefonia-fija.png"
-                title="Maxcom"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  Maxcom
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-          <Card className={classes.card}
-            onClick={this.goToForm}
-          >
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image="telefonia-fija.png"
-                title="Megacable"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  Megacable
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-          <Card className={classes.card}
-            onClick={this.goToForm}
-          >
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image="telmex.png"
-                title="Telmex"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  Telmex
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-          <Card className={classes.card}
-            onClick={this.goToForm}
-          >
-            <CardActionArea>
-              <CardMedia
-                className={classes.media}
-                image="totalplay.png"
-                title="Totalplay"
-              />
-              <CardContent>
-                <Typography gutterBottom variant="h5" component="h2">
-                  Totalplay
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
+    return (
+      <React.Fragment>
+        <Typography variant="h6" gutterBottom>
+          Seleccione su proveedor de <u>Telefonía fija</u>
+        </Typography>
+        <Grid container spacing={24}>
+          <Grid item xs={12} sm={24}>
+            <Card className={classes.card}
+              onClick={this.goToForm}
+            >
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image="izzi.png"
+                  title="izzi"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    izzi
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+            <Card className={classes.card}
+              onClick={this.goToForm}
+            >
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image="telefonia-fija.png"
+                  title="Maxcom"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Maxcom
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+            <Card className={classes.card}
+              onClick={this.goToForm}
+            >
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image="telefonia-fija.png"
+                  title="Megacable"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Megacable
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+            <Card className={classes.card}
+              onClick={this.goToForm}
+            >
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image="telmex.png"
+                  title="Telmex"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Telmex
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+            <Card className={classes.card}
+              onClick={this.goToForm}
+            >
+              <CardActionArea>
+                <CardMedia
+                  className={classes.media}
+                  image="totalplay.png"
+                  title="Totalplay"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h5" component="h2">
+                    Totalplay
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+          </Grid>
         </Grid>
-      </Grid>
-    </React.Fragment>
-  );
+      </React.Fragment>
+    );
   }
 }
 

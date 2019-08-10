@@ -38,7 +38,9 @@ class Providers extends React.Component {
                               goToForm={this.props.goToForm}
                             />;
     } else if (typeOfService === 'banda_ancha_fija') {
-      providers_component = <ProveedoresBandaAnchaFija />;
+      providers_component = <ProveedoresBandaAnchaFija
+                              goToForm={this.props.goToForm}
+                            />;
     } else if (typeOfService === 'tv') {
       providers_component = <ProveedoresTv />;
     } else if (typeOfService === 'telefonia_movil') {
