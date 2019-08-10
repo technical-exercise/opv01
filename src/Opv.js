@@ -74,7 +74,10 @@ class Opv extends React.Component {
                  bandaAnchaMovil={this.bandaAnchaMovil}
                />;
       case 1:
-        return <Providers typeOfService={this.state.typeOfService} />;
+        return <Providers
+                 typeOfService={this.state.typeOfService}
+                 goToForm={this.goToForm}
+               />;
       case 2:
         return <Form />;
       case 3:
@@ -102,6 +105,10 @@ class Opv extends React.Component {
 
   bandaAnchaMovil = () => {
     this.setState({activeStep: 1, typeOfService: 'banda_ancha_movil'});
+  }
+
+  goToForm = () => {
+    this.setState({activeStep: 2});
   }
 
   handleNext = () => {

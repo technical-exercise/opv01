@@ -20,8 +20,16 @@ const styles = {
   },
 };
 
-function ProveedoresTelefoniaFija(props) {
-  const { classes } = props;
+class ProveedoresTelefoniaFija extends React.Component {
+  constructor(props) {
+    super(props);
+    this.goToForm = this.goToForm.bind(this);
+  }
+  goToForm() {
+    this.props.goToForm();
+  }
+  render() {
+    const classes = this.props.classes;
   return (
     <React.Fragment>
       <Typography variant="h6" gutterBottom>
@@ -29,7 +37,9 @@ function ProveedoresTelefoniaFija(props) {
       </Typography>
       <Grid container spacing={24}>
         <Grid item xs={12} sm={24}>
-          <Card className={classes.card}>
+          <Card className={classes.card}
+            onClick={this.goToForm}
+          >
             <CardActionArea>
               <CardMedia
                 className={classes.media}
@@ -43,7 +53,9 @@ function ProveedoresTelefoniaFija(props) {
               </CardContent>
             </CardActionArea>
           </Card>
-          <Card className={classes.card}>
+          <Card className={classes.card}
+            onClick={this.goToForm}
+          >
             <CardActionArea>
               <CardMedia
                 className={classes.media}
@@ -57,7 +69,9 @@ function ProveedoresTelefoniaFija(props) {
               </CardContent>
             </CardActionArea>
           </Card>
-          <Card className={classes.card}>
+          <Card className={classes.card}
+            onClick={this.goToForm}
+          >
             <CardActionArea>
               <CardMedia
                 className={classes.media}
@@ -71,7 +85,9 @@ function ProveedoresTelefoniaFija(props) {
               </CardContent>
             </CardActionArea>
           </Card>
-          <Card className={classes.card}>
+          <Card className={classes.card}
+            onClick={this.goToForm}
+          >
             <CardActionArea>
               <CardMedia
                 className={classes.media}
@@ -85,7 +101,9 @@ function ProveedoresTelefoniaFija(props) {
               </CardContent>
             </CardActionArea>
           </Card>
-          <Card className={classes.card}>
+          <Card className={classes.card}
+            onClick={this.goToForm}
+          >
             <CardActionArea>
               <CardMedia
                 className={classes.media}
@@ -103,6 +121,7 @@ function ProveedoresTelefoniaFija(props) {
       </Grid>
     </React.Fragment>
   );
+  }
 }
 
 export default withStyles(styles)(ProveedoresTelefoniaFija);

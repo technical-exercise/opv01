@@ -34,7 +34,9 @@ class Providers extends React.Component {
     const typeOfService = this.props.typeOfService;
     let providers_component;
     if (typeOfService === 'telefonia_fija') {
-      providers_component = <ProveedoresTelefoniaFija />;
+      providers_component = <ProveedoresTelefoniaFija
+                              goToForm={this.props.goToForm}
+                            />;
     } else if (typeOfService === 'banda_ancha_fija') {
       providers_component = <ProveedoresBandaAnchaFija />;
     } else if (typeOfService === 'tv') {
