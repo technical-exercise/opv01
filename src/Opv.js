@@ -166,19 +166,26 @@ class Opv extends React.Component {
                 <React.Fragment>
                   {this.getStepContent(activeStep)}
                   <div className={classes.buttons}>
-                    {activeStep !== 0 && (
-                      <Button onClick={this.handleBack} className={classes.button}>
-                        Back
-                      </Button>
-                    )}
+                    {activeStep === 2 && (
                     <Button
                       variant="contained"
                       color="primary"
                       onClick={this.handleNext}
                       className={classes.button}
                     >
-                      {activeStep === steps.length - 1 ? 'Thank you' : 'Next'}
+                      {activeStep === steps.length - 1 ? 'Gracias' : 'Siguiente'}
                     </Button>
+                    )}
+                    {activeStep === 3 && (
+                    <Button
+                      variant="contained"
+                      color="primary"
+                      onClick={this.handleNext}
+                      className={classes.button}
+                    >
+                      {activeStep === steps.length - 1 ? 'Gracias' : 'Siguiente'}
+                    </Button>
+                    )}
                   </div>
                 </React.Fragment>
               )}
