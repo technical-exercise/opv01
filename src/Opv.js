@@ -159,7 +159,7 @@ class Opv extends React.Component {
               {activeStep === steps.length ? (
                 <React.Fragment>
                   <Typography variant="h5" gutterBottom>
-                    Thanks for using Access My Info!
+                    Gracias por usar la página!
                   </Typography>
                 </React.Fragment>
               ) : (

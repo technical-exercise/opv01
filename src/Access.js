@@ -24,77 +24,96 @@ function Access(props) {
   return (
     <React.Fragment>
       <Typography variant="h3" gutterBottom>
-        Your request is ready
+        Su solicitud está lista
       </Typography>
       <Typography paragraph>
-        February 11th, 2019
+        Agosto 10, 2019
       </Typography>
       <Typography paragraph>
-        The Office of the Bell Privacy Ombudsman 
+        Departamento de Datos Personales
       </Typography>
       <Typography paragraph>
-        Dear Privacy Officer:
+        Me permito hacer de su conocimiento, que soy usuario/a del servicio de banda ancha fija que esa empresa provee. Por ello, tengo derecho a acceder a los datos personales que su compañía posee, al igual que a conocer la manera en que ésta fue recolectada, se usa, divulga, transfiere, almacena y, en general, es objeto de cualquier tipo de tratamiento.
       </Typography>
       <Typography paragraph>
-        I am a user of your telecommunications service, and am interested in both learning more about your data management practices and about the kinds of personal information that you maintain and retain about me. So this is a request to access my personal data under’ Principle 4.9 of Schedule 1 and section 8 Canada’s federal privacy legislation, the Personal Information Protection and Electronic Documents Act (PIPEDA).
+        Lo anterior, con fundamento en lo dispuesto en los artículos 1° y 16, párrafo segundo, de la Constitución Política de los Estados Unidos Mexicanos y 1, 2, 6, 22, 23, 28 y 29 de la Ley Federal de Protección de Datos Personales en Posesión de Particulares (LFPDPPP).
       </Typography>
       <Typography paragraph>
-    I have the following questions about the collection, use, and disclosure of my personal data:
-      </Typography>
-      <Typography paragraph>
-    I am requesting a copy of all records which contain my personal information from your organization.
-      </Typography>
-      <Typography paragraph>
-    The following is a non-exclusive listing of all information that Bell may hold about me, including the following:
+        En este entendido, solicito acceso a la siguiente información y datos personales:
       </Typography>
       <li>
         <Typography component="span">
-    Call logs E.g. numbers dialed, times and dates of calls, call durations, routing information, and any geolocational or cellular tower information associated with the calls)
-      </Typography>
+          Qué datos personales poseen sobre mí, derivados de la contratación y la prestación del servicio;
+        </Typography>
       </li>
       <li>
         <Typography component="span">
-    Mobile app data Information collected about me, or persons/devices associated with my account, using one of your company’s mobile device applications
-      </Typography>
+          Copia del contrato de prestación del servicio que celebré con ustedes;
+        </Typography>
       </li>
       <li>
         <Typography component="span">
-    Geolocation data collected about me, my devices, and/or associated with my account (e.g. GPS information, cell tower information)
-      </Typography>
+          Qué servicios adicionales tengo contratados;
+        </Typography>
       </li>
       <li>
         <Typography component="span">
-    IP address logs associated with me, my devices, and/or my account (e.g. IP addresses assigned to my devices/router, IP addresses or domain names of sites I visit and the times, dates, and port numbers)
-      </Typography>
+          La dirección IP de mi servicio;
+        </Typography>
       </li>
       <li>
         <Typography component="span">
-    Disclosures to third parties Any information about disclosures of my personal information, or information about my account or devices, to other parties, including law enforcement and other state agencies
-      </Typography>
+          Los fines para los que se utilizan mis datos personales;
+        </Typography>
       </li>
       <li>
         <Typography component="span">
-    Text & multimedia messages (sent and received, including date, time, and recipient information)
-      </Typography>
+          Copia del aviso de privacidad integral vigente;
+        </Typography>
       </li>
       <li>
         <Typography component="span">
-    Subscriber information that you store about me, my devices, and/or my account
-      </Typography>
+          Nombre de los entes públicos y/o privados a los que se han transferido mis datos personales y para qué finalidades;
+        </Typography>
       </li>
       <li>
         <Typography component="span">
-    Other Any additional kinds of information that you have collected, retained, or derived from the telecommunications services or devices that I, or someone associated with my account, have transmitted or received using your company’s services
-      </Typography>
+          Nombre de los encargados a los que se ha llevado a cabo cualquier remisión de mis datos personales y para cuáles finalidades;
+        </Typography>
+      </li>
+      <li>
+        <Typography component="span">
+          Fecha en que se activó el servicio de banda ancha móvil
+        </Typography>
+      </li>
+      <li>
+        <Typography component="span">
+          Los datos referentes a  la fecha, hora y duración de las conexiones a internet realizadas a través del dispositivo de banda ancha fija;
+        </Typography>
+      </li>
+      <li>
+        <Typography component="span">
+          Cualquier información recolectada por parte de aplicaciones móviles de esa empresa, sobre mi personas o de cualquier tercero que hayan sido recopiladas por el uso de dicha aplicación;
+        </Typography>
+      </li>
+      <li>
+        <Typography component="span">
+          Fecha en que se cancelaron mis datos personales y constancia de ello;
+        </Typography>
+      </li>
+      <li>
+        <Typography component="span">
+          Cualquier otro dato personal que posea en su base de datos.
+        </Typography>
       </li>
       <Typography paragraph>
-    If your organization has other information in addition to these items, I formally request access to that as well. If your service includes a data export tool, please direct me to it, and ensure that in your response to this letter, you provide all information associated with me that is not included in the output of this tool. Please ensure that you include all information that is directly associated with my name, phone number, e-mail, or account number, as well as any other account identifiers that your company may associate with my personal information.
+        El artículo 35 de la LFPDPPP exige que el trámite  de entrega de los datos personales sea gratuito, debiendo cubrir en mi caso, únicamente los gastos justificados de envío o el costo de reproducción en copias u otros formatos.
       </Typography>
       <Typography paragraph>
-    You are obligated to provide copies at a free or minimal cost within thirty (30) days in receipt of this message. If you choose to deny this request, you must provide a valid reason for doing so under Canada’s PIPEDA. Ignoring a written request is the same as refusing access. See the guide from the Office of the Privacy Commissioner at: http://www.priv.gc.ca/information/guide_e.asp#014. The Commissioner is an independent oversight body that handles privacy complaints from the public.
+        Por su parte, el artículo 32 de la LFPDPPP requiere que su respuesta debe ser en un plazo máximo de veinte días hábiles, contados desde la fecha en que se recibió la solicitud de acceso, a efecto de que, si resulta procedente, se haga efectiva la misma dentro de los quince días siguientes a la fecha en que se comunica la respuesta. Estos plazos podrán ser ampliados una sola vez por un periodo igual, siempre y cuando así lo justifiquen las circunstancias del caso.
       </Typography>
       <Typography paragraph>
-    Please let me know if your organization requires additional information from me before proceeding with my request.
+        En caso de que esa empresa no me entregue los datos personales en los términos asentados en esta carta, su respuesta deberá estar debidamente fundada y acompañar las pruebas necesarias. En su caso, en términos de lo previsto por el artículo 35 de la LFPDPPP, yo podré presentar una solicitud de protección de datos ante el Instituto Nacional de Transparencia, Acceso a la Información y Protección de Datos Personales.
       </Typography>
     </React.Fragment>
   );
