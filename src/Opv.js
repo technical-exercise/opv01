@@ -111,9 +111,16 @@ class Opv extends React.Component {
   }
 
   handleNext = () => {
-    this.setState(state => ({
-      activeStep: state.activeStep + 1,
-    }));
+    if (this.state.activeStep === 3) {
+      this.setState(state => ({
+        activeStep: 0,
+        provider: '',
+      }));
+    } else {
+      this.setState(state => ({
+        activeStep: state.activeStep + 1,
+      }));
+    }
   };
 
   handleBack = () => {
@@ -155,13 +162,6 @@ class Opv extends React.Component {
               ))}
             </Stepper>
             <React.Fragment>
-              {activeStep === steps.length ? (
-                <React.Fragment>
-                  <Typography variant="h5" gutterBottom>
-                    Gracias por usar la página!
-                  </Typography>
-                </React.Fragment>
-              ) : (
                 <React.Fragment>
                   {this.getStepContent(activeStep)}
                   <div className={classes.buttons}>
@@ -172,7 +172,7 @@ class Opv extends React.Component {
                       onClick={this.handleNext}
                       className={classes.button}
                     >
-                      {activeStep === steps.length - 1 ? 'Gracias' : 'Siguiente'}
+                      {activeStep === steps.length - 1 ? 'Finalizar' : 'Siguiente'}
                     </Button>
                     )}
                     {activeStep === 3 && (
@@ -182,12 +182,11 @@ class Opv extends React.Component {
                       onClick={this.handleNext}
                       className={classes.button}
                     >
-                      {activeStep === steps.length - 1 ? 'Gracias' : 'Siguiente'}
+                      {activeStep === steps.length - 1 ? 'Finalizar' : 'Siguiente'}
                     </Button>
                     )}
                   </div>
                 </React.Fragment>
-              )}
             </React.Fragment>
           </Paper>
         </main>
